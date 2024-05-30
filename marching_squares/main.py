@@ -86,8 +86,10 @@ for line in range(len(image) - 1):
 
         
 # Plotting stuff
+import matplotlib.cm as cm
+
 fig, ax = plt.subplots()
-ax.imshow(image, cmap=plt.cm.gray)
+ax.imshow(image, cmap=cm.gray)
 ax.axis('image')
 for l in isocontour:
     ax.plot(
